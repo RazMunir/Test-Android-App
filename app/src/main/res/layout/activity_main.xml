@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="Duck"
         android:onClick="showToast"
-        android:padding="40dp"
+        android:padding="30dp"
         android:layout_gravity="center"/>
 
     <Button
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:text="Finch"
         android:onClick="showToast"
-        android:padding="40dp"
+        android:padding="30dp"
         android:layout_gravity="center"/>
 
     <Button
@@ -47,6 +47,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="finchGoDown"
+        android:text="Go Down" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Activity"
+        android:onClick="showToast"
+        android:padding="30dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="MainActGoForward"
+        android:text="Go Forward" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="MainActGoDown"
         android:text="Go Down" />
 
 </LinearLayout>
