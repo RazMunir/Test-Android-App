@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Duck"
         android:onClick="showToast"
         android:padding="40dp"
         android:layout_gravity="center"/>
@@ -26,6 +26,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="goDown"
+        android:text="Go Down" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finch"
+        android:onClick="showToast"
+        android:padding="40dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/finchGoForward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="finchGoForward"
+        android:text="Go Forward" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="finchGoDown"
         android:text="Go Down" />
 
 </LinearLayout>

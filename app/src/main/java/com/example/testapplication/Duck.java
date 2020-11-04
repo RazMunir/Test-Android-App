@@ -13,11 +13,11 @@ public class Duck implements Fly{
 
     @Override
     public void goForward() {
-        Toast.makeText(context, "Go Forward...", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "Duck Go Forward...", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void goDown() {
-        Toast.makeText(context, "Go Down...", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "Duck Go Down...", Toast.LENGTH_SHORT).show();
     }
 }
