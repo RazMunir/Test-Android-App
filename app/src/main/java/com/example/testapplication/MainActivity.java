@@ -2,6 +2,7 @@ package com.example.testapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -72,5 +73,9 @@ public class MainActivity extends AppCompatActivity implements Fly{
 
     public void MainActGoDown(View view) {
         goDown();
+    }
+
+    public void goToFragmentActivity(View view) {
+        startActivity(new Intent(MainActivity.this, FragmentTestActivity.class));
     }
 }
