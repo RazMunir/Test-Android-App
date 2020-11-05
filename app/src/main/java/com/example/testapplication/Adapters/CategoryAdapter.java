@@ -1,4 +1,4 @@
-package com.example.testapplication;
+package com.example.testapplication.Adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,11 +12,15 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.testapplication.Category;
+import com.example.testapplication.R;
+
 import java.util.ArrayList;
 
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHolderClass> {
     ArrayList<Category> categoryArrayList;
     Context context;
+    RecyclerView categoryAdapterTypeRecyclerView;
 
     public CategoryAdapter() {
     }
@@ -24,6 +28,12 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
     public CategoryAdapter(ArrayList<Category> categoryArrayList, Context context) {
         this.categoryArrayList = categoryArrayList;
         this.context = context;
+    }
+
+    public CategoryAdapter(ArrayList<Category> categoryArrayList, Context context, RecyclerView categoryAdapterTypeRecyclerView) {
+        this.categoryArrayList = categoryArrayList;
+        this.context = context;
+        this.categoryAdapterTypeRecyclerView = categoryAdapterTypeRecyclerView;
     }
 
     @NonNull
@@ -41,7 +51,14 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
         holder.categoryContainerLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "Clicked item "+position+1, Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Clicked item "+position, Toast.LENGTH_SHORT).show();
+                //add condition here
+                if(categoryAdapterTypeRecyclerView.getVisibility()==View.VISIBLE){
+                    categoryAdapterTypeRecyclerView.setVisibility(View.GONE);
+                }
+                else {
+                    categoryAdapterTypeRecyclerView.setVisibility(View.VISIBLE);
+                }
             }
         });
 //        final User user = userArrayList.get(position);

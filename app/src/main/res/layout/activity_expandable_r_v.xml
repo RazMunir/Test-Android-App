@@ -19,10 +19,16 @@
             android:background="#F6E2E2"
             android:orientation="vertical">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_category"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </ScrollView>
 
         </LinearLayout>
 
@@ -31,10 +37,16 @@
             android:layout_height="match_parent"
             android:layout_weight="3">
 
-            <FrameLayout
-                android:id="@+id/mainframe"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </ScrollView>
 
         </LinearLayout>
 

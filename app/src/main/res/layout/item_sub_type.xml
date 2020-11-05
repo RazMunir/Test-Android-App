@@ -3,28 +3,23 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
-
     <LinearLayout
-        android:id="@+id/ll_category_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="10dp">
-
+        android:padding="5dp">
         <ImageView
-            android:id="@+id/iv_category_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_home_lifestyle_24"
             android:layout_gravity="center"/>
 
         <TextView
+            android:id="@+id/tv_subType_title"
             android:gravity="center"
-            android:id="@+id/tv_category_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Category"/>
-
+            android:text="Sub Type"/>
     </LinearLayout>
 
 </LinearLayout>
