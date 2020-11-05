@@ -1,4 +1,4 @@
-package com.example.testapplication;
+package com.example.testapplication.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
@@ -6,6 +6,10 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.testapplication.FragmentA;
+import com.example.testapplication.FragmentB;
+import com.example.testapplication.R;
 
 public class FragmentTestActivity extends AppCompatActivity {
 

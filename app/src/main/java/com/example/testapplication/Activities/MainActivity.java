@@ -1,4 +1,4 @@
-package com.example.testapplication;
+package com.example.testapplication.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements Fly{
+import com.example.testapplication.Duck;
+import com.example.testapplication.Finch;
+import com.example.testapplication.Fly;
+import com.example.testapplication.R;
+
+public class MainActivity extends AppCompatActivity implements Fly {
 
     Duck duck;
     Finch finch;
@@ -77,5 +82,9 @@ public class MainActivity extends AppCompatActivity implements Fly{
 
     public void goToFragmentActivity(View view) {
         startActivity(new Intent(MainActivity.this, FragmentTestActivity.class));
+    }
+
+    public void goToExpandableRVActivity(View view) {
+        startActivity(new Intent(MainActivity.this, ExpandableRVActivity.class));
     }
 }

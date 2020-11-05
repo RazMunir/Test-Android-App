@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.FragmentTestActivity">
+    tools:context=".Activities.ExpandableRVActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,22 +16,16 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/black"
+            android:background="#F6E2E2"
             android:orientation="vertical">
 
-            <Button
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_category"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="A"
-                android:onClick="fragmentA"/>
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="B"
-                android:onClick="fragmentB"/>
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -39,8 +33,8 @@
 
             <FrameLayout
                 android:id="@+id/mainframe"
-                android:layout_height="match_parent"
-                android:layout_width="match_parent" />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
         </LinearLayout>
 
